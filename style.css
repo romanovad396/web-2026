@@ -22,7 +22,7 @@ body {
 .title {
     width: 385px;
     height: 180px;
-    top: 182.37px;
+    top: 182px;
     left: 179px;
     font: 700 140px/180px Golos UI, sans-serif;
     letter-spacing: -1.5px;
@@ -45,8 +45,6 @@ body {
     width: 343px;
     height: 18px;
     font: 400 15px/18px Golos UI, sans-serif;
-    font-family: Golos UI;
-    font-style: Regular;
     letter-spacing: -0.15px;
     color: #222222;
 }
@@ -67,7 +65,6 @@ body {
     margin-left: 12px;
     font: 400 15px/18px Golos UI, sans-serif;
     opacity: 1;
-    font-style: Regular;
     letter-spacing: -0.15px;
     vertical-align: middle;
     width: 100%;
@@ -81,7 +78,6 @@ body {
     position:relative;
     font: 400 15px/18px Golos UI, sans-serif;
     opacity: 1;
-    font-style: Regular;
     letter-spacing: -0.15px;
     vertical-align: middle;
     width: 100%;
