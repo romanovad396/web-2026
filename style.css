@@ -1,0 +1,93 @@
+body {
+    font-family: Golos UI, sans-serif;
+    src: url(./fonts/Golos-UI_Bold.ttf);
+}
+
+.layout { 
+    max-width: 343px; 
+    display: flex; 
+    align-items: center;
+    gap: 32px;
+}
+
+.image-element {
+    width: 462px;
+    height: 501px;
+    top: 289px;
+    left: 269px;
+    margin-left: 269px;
+    flex: 0 0 var(462px); 
+    display: block;
+}
+
+.title {
+    width: 385px;
+    height: 180px;
+    top: 182px;
+    left: 179px;
+    font: 700 140px/180px Golos UI, sans-serif;
+    letter-spacing: -2px;
+    color: #222222;
+    margin: 182.37px 876px 717.63px 179px;
+    display: inline;
+}
+
+.main-wrapper {
+    flex: 1 1 auto; 
+    min-width: var(343px);
+}
+
+.form {
+    width: 343px;
+    height: 251px;
+    top: 415px;
+    left: 838px;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    gap: 32px;
+}
+
+.form-lable {
+    width: 343px;
+    height: 18px;
+    font: 400 15px/18px Golos UI, sans-serif;
+    font-family: Golos UI;
+    letter-spacing: -0.15px;
+    color: #222222;
+}
+
+.input-container {
+    width: 343px;
+    height: 44px;
+    justify-content: space-between;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 13px 12px 8px 12px;
+    background-color: #F2F3F5;
+}
+
+.input-field {
+    font: 400 15px/18px Golos UI, sans-serif;
+    opacity: 1;
+    letter-spacing: -1px;
+    vertical-align: middle;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+}
+
+.button {
+    width: 370px;
+    height: 48px;
+    border-radius: 10px;
+    padding: 14px 125px 14px 125px;
+    margin-top: 30px;
+    background-color: #222222;
+    display: block; 
+    box-sizing: border-box; 
+    text-align: center;
+    text-decoration: none; 
+    color: #FFFFFF; 
+}
