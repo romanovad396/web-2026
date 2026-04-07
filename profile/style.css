@@ -1,157 +1,150 @@
-.body {
-    font-family: Golos UI, sans-serif;
-    src: url(./fonts/Golos-UI_Bold.ttf);
+@font-face {
+  font-family: "Golos UI";
+  src: url("./fonts/Golos-UI_Bold.ttf") format("ttf");
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Golos UI", sans-serif;
+  color: #222222;
+  background: #ffffff;
+  overflow-x: hidden;
 }
 
 .clear-border-in-body {
-    height: 100vh;      
-    margin: 0;
-    padding: 0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
-    display: flex;
-    height: 100%;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 72px 1fr; 
+  gap: 0;
+  min-height: 100vh;
+  align-items: start;
 }
 
 .sidebar-field {
-    display: flex;
-    flex-direction: column;
-    width: 72px;
-    height: 1080px;    
-    left: -1px;
-    border-right: 1px solid #2222220D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  border-right: 1px solid #2222220D;
+  background: #fff;
 }
 
 .navigation {
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 40px;
-    width: 40px;
-    top: 152px;
-    left: 16px;
-    gap: 10px;
-    border-radius: 10px;
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
 }
-.Smart-button {
-    height: 40px;
-    width: 40px;
+
+.smart-button {
+  width: 40px;
+  height: 40px;
+  display: block;
 }
 
 .column-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 24px;
+  width: 100%;
+  align-items: start;
 }
 
 .header-field {
-    display: flex;
-    width: 100%;      
-    height: 73px;
+  height: 73px;
+  width: 100%;
 }
 
 .user {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 24px;
-    padding: 0 16px;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 24px;
+  padding: 0 16px;
 }
 
 .avatar-name-field {
-    display: flex;
-    flex-direction: column;           
-    align-items: center;
-    gap: 12px;
-    width: auto;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 123px 1fr;
+  gap: 16px;
+  align-items: center;
+  max-width: 980px;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .avatar-block {
-    width: 123px;
-    height: 123px;
-    top: 97px;
-    left: 658px;
-    gap: 8px;
-    border-radius: 16px;
-    object-fit: cover;
-    display: block;
+  width: 123px;
+  height: 123px;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .user-name-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    max-width: 720px;
-    text-align: center;
-    padding: 0 8px;
-    font: 500 32px/32px Golos UI, sans-serif;
-    font-style: Medium;
-    letter-spacing: -1px;
-    text-align: center;
-    vertical-align: middle;
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #222222;
 }
-
 
 .user-description {
-    max-width: 400px;
-    font: 400 15px/18px Golos UI, sans-serif;
-    letter-spacing: -1px;
-    text-align: center;
-    margin: 0 16px;
+  margin: 0;
+  max-width: 360px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #222222;
 }
 
-.photo-number-field {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 95px;
-    height: 30px;
-    top: 330px;
-    left: 669px;
-    border-radius: 6px;
-    gap: 6px;
-    padding: 6px 10px 6px 10px;
-    background-color: #F2F3F5;
+.avatar-name-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
-.photo-number-block {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px; 
+  width: 100%;
+  max-width: 972px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.photo-number {
-    width: 59px;
-    height: 18px;
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
 }
-
-.photo-number-text {
-    font: 400 15px/18px Golos UI, sans-serif;
-    letter-spacing: -1px;
-    vertical-align: middle;
-}
-
-.photo-field { 
-    width: 972px;
-    height: 1622px;
-    margin: 0 auto; 
-    margin-top: 42px; 
-    position: relative; 
-    box-sizing: border-box;
-    left: 0;                 
-    right: 0;
-}
-
-.photo-set {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
