@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Login and Password</title>
+        <meta charset="UTF-8">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="layout">
+            <h1 class="title">Войти</h1>
+            <img src="./image/smiling-men.jpg" alt="smiling-men" width="462" height="501" class="image-element">        
+            <div class="main-wrapper">
+                <form class="form">
+                    <label class="form-label" for="email">Электропочта</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" class="input-field" required>
+                    </div>
+                    <p class="form-description">Введите электропочту в формате **@*.**</p>
+                    <label class="form-label" for="password">Пароль</label>
+                    <div class="input-container password-container">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            class="input-field" 
+                            required>
+                    </div>
+                    <button class="button" type="submit" target="_blank" title="Продолжить">Продолжить</button>                
+                </form>
+            </div>
+        </div>    
+    </body>
+</html>
