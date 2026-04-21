@@ -208,18 +208,21 @@ body {
     height: 18px;
     justify-content: flex-start;
     margin-right: 8px;
+    text-decoration: none;
 }
 
 .like-count {
     display: block;
     color: black;
     font: 400 15px "Golos UI", sans-serif;
+    text-decoration: none;
 }
 
-.coment-field {
+.comment-field {
     width: 474px;
     height: 37px;
     display: block;
+    text-decoration: none;
 }
 
 .time {
